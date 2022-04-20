@@ -1,0 +1,41 @@
+{
+  "name": "terra-rails",
+  "private": true,
+  "dependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-react": "^7.16.7",
+    "@cerner/eslint-config-terra": "^5.4.0",
+    "@cerner/jest-config-terra": "^1.5.0",
+    "@cerner/webpack-config-terra": "^2.4.0",
+    "@rails/actioncable": "^6.0.0",
+    "@rails/activestorage": "^6.0.0",
+    "@rails/ujs": "^6.0.0",
+    "@rails/webpacker": "5.4.3",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+    "eslint": "^7.0.0",
+    "intl": "^1.2.5",
+    "postcss": "^8.0.0",
+    "prop-types": "^15.8.1",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-intl": "^2.8.0",
+    "sass-loader": "^10.1.1",
+    "terra-base": "^5.48.1",
+    "terra-form-select": "^6.35.2",
+    "ts-loader": "^4.4.2",
+    "turbolinks": "^5.2.0",
+    "typescript": "^4.6.3",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-merge": "^5.8.0"
+  },
+  "version": "0.1.0",
+  "devDependencies": {
+    "webpack-dev-server": "^3"
+  },
+  "scripts": {
+    "start": "bundle exec rails server -b 0.0.0.0 -p 3000",
+    "build": "bundle install --quiet && bundle exec rake assets:precompile"
+  }
+}
